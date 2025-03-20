@@ -7,6 +7,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from dal.database import Base
+from dal.po.research_field import ResearchField  # noqa: F401
+from dal.po.user_profile import UserProfile  # noqa: F401
 from settings import settings
 
 engine = create_engine(settings.DATABASE_URL)
