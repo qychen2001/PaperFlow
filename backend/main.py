@@ -1,3 +1,4 @@
+import logfire
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,6 +11,9 @@ from web.controller.user import router as user_router
 from web.handler.auth import auth_exception_handler
 
 app = FastAPI(title="PaperFlow API", version="1.0.0")
+
+logfire.configure()
+logfire.instrument_fastapi(app)
 
 app.add_middleware(TokenValidatorMiddleware)
 app.add_middleware(
