@@ -8,5 +8,6 @@ dependencies = [
     "casdoor>=1.29.0",
     "fastapi>=0.115.12",
     "pydantic-settings>=2.8.1",
+    "sqlalchemy>=2.0.40",
     "uvicorn>=0.34.0",
 ]

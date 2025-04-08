@@ -8,7 +8,7 @@ from common.utils.casdoor import casdoor
 from web.vo.result import Result
 
 
-class TokenValidatorMiddleware(BaseHTTPMiddleware):
+class TokenValidateMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next) -> Response:
         whitelist = ["/api/auth/exchange_code"]
         if request.url.path in whitelist:

@@ -1,1 +1,1 @@
-from .auth import AuthException
+from .auth import AuthException  # noqa: F401
