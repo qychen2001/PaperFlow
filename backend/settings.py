@@ -9,5 +9,13 @@ class Settings(BaseSettings):
     API_PORT: int = 8000
     DEBUG: bool = False
 
+    # casdoor配置
+    CASDOOR_ENDPOINT: str = ""
+    CASDOOR_CLIENT_ID: str = ""
+    CASDOOR_CLIENT_SECRET: str = ""
+    CASDOOR_CERTIFICATE: str = ""
+    CASDOOR_ORG_NAME: str = ""
+    CASDOOR_APPLICATION_NAME: str = ""
+
 
 settings = Settings()
